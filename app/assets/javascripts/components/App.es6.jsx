@@ -11,11 +11,12 @@ class App extends React.Component {
       movies: movieResults
     })
   }
+
   render() {
     return(
       <div>
         <div className='container'>
-          <SearchView onUpdate={this.showMovies.bind(this)} />
+          <SearchView onUpdate={this.showMovies} />
         </div>
         <MovieView movies={this.state.movies}/>
       </div>

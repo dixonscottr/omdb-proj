@@ -14,7 +14,7 @@ class SearchByKeyWord extends React.Component {
 
   render() {
     return(
-      <form className="form-inline" onChange={handleChange}>
+      <form className="form-inline" onChange={this.handleChange.bind(this)}>
         <div className="form-group">
           <label htmlFor="search-terms">Search by keyword:</label>
           <input ref='searchTerms' type="text" className="form-control" id="search-terms" placeholder="Ex: Mother may I sleep with Danger?" />

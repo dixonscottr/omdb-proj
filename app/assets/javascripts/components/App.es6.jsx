@@ -14,7 +14,9 @@ class App extends React.Component {
   render() {
     return(
       <div>
-        <SearchView onUpdate={this.showMovies} />
+        <div className='container'>
+          <SearchView onUpdate={this.showMovies} />
+        </div>
         <MovieView movies={this.state.movies}/>
       </div>
       )

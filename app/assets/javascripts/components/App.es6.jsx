@@ -15,7 +15,7 @@ class App extends React.Component {
     return(
       <div>
         <div className='container'>
-          <SearchView onUpdate={this.showMovies} />
+          <SearchView onUpdate={this.showMovies.bind(this)} />
         </div>
         <MovieView movies={this.state.movies}/>
       </div>

@@ -21,6 +21,7 @@ class SearchView extends React.Component {
               <input ref='searchTerms' type="text" className="form-control" id="search-terms" placeholder="Ex: Mother may I sleep with Danger?" />
             </div>
           </form>
+          <a href='/' className='btn btn-info btn-xs'>New Search</a>
         </div>
         )
   }
